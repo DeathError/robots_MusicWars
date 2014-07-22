@@ -1,0 +1,319 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }  
+         
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>MusicWars.sikuli\MusicWars.sikuli</h2> <a href="MusicWars.sikuli\MusicWars.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="cmt">#Начальныый этап
+</span><span class="kw">def</span> else_none_boi():  <span class="cmt">#если кончились бои то можем пока прокачать </span>
+    Region(<span class="dig">13</span>,<span class="dig">223</span>,<span class="dig">109</span>,<span class="dig">320</span>).<span class="skw">click</span>(<img src="ZIIH.png" />)
+    <span class="skw">sleep</span>(<span class="dig">0.23</span>)
+    Region(<span class="dig">173</span>,<span class="dig">253</span>,<span class="dig">774</span>,<span class="dig">554</span>).<span class="skw">click</span>(<img src="VL.png" />)
+    <span class="kw">if</span> Region(<span class="dig">173</span>,<span class="dig">253</span>,<span class="dig">774</span>,<span class="dig">554</span>).exists(<img src="3a6par1Q1.png" />):
+         Region(<span class="dig">173</span>,<span class="dig">253</span>,<span class="dig">774</span>,<span class="dig">554</span>).<span class="skw">click</span>(<img src="3a6par1Q1.png" />)
+         <span class="skw">sleep</span>(<span class="dig">10</span>)
+         Region(<span class="dig">173</span>,<span class="dig">253</span>,<span class="dig">774</span>,<span class="dig">554</span>).<span class="skw">click</span>(<img src="13aKa33Tb1.png" />)
+         <span class="skw">sleep</span>(<span class="dig">1</span>)
+         close_monah()
+    <span class="kw">else</span>:
+        <span class="kw">if</span> Region(<span class="dig">213</span>,<span class="dig">656</span>,<span class="dig">359</span>,<span class="dig">76</span>).exists(<img src="MonaxMonmcq.png" />):
+            close_monah()
+        <span class="kw">else</span>:
+         Region(<span class="dig">173</span>,<span class="dig">253</span>,<span class="dig">774</span>,<span class="dig">554</span>).<span class="skw">click</span>(<img src="13aKa33Tb1.png" />)
+         <span class="skw">sleep</span>(<span class="dig">1</span>)
+         close_monah()
+
+<span class="kw">def</span> close_monah():
+     Region(<span class="dig">13</span>,<span class="dig">222</span>,<span class="dig">106</span>,<span class="dig">392</span>).<span class="skw">click</span>(<img src="1404565025484.png" />)
+     <span class="skw">sleep</span>(<span class="dig">0.23</span>)
+     Region(<span class="dig">173</span>,<span class="dig">253</span>,<span class="dig">774</span>,<span class="dig">554</span>).<span class="skw">click</span>(<img src="QBLBnp0Ma01y.png" />)
+     <span class="skw">sleep</span>(<span class="dig">0.23</span>)
+     Region(<span class="dig">173</span>,<span class="dig">253</span>,<span class="dig">774</span>,<span class="dig">554</span>).<span class="skw">click</span>(<img src="fx01.png" />)
+     open_atomka()
+
+<span class="kw">def</span> open_atomka():
+    <span class="kw">if</span> Region(<span class="dig">177</span>,<span class="dig">301</span>,<span class="dig">766</span>,<span class="dig">494</span>).exists(<img src="Baxpumnannaa.png" />):
+        Region(<span class="dig">177</span>,<span class="dig">301</span>,<span class="dig">766</span>,<span class="dig">494</span>).<span class="skw">click</span>(<img src="Hanan.png" />)
+        <span class="skw">sleep</span>(<span class="dig">0.5</span>)
+        open_atomka_vidor()
+    <span class="kw">else</span>:
+        open_atomka_vidor()
+
+<span class="kw">def</span> open_atomka_vidor():
+    <span class="kw">if</span> Region(<span class="dig">177</span>,<span class="dig">249</span>,<span class="dig">764</span>,<span class="dig">393</span>).exists(Pattern(<img src="HanacrnZE.png" />).targetOffset(-<span class="dig">17</span>,<span class="dig">3</span>)):
+        <span class="kw">if</span> Region(<span class="dig">219</span>,<span class="dig">324</span>,<span class="dig">480</span>,<span class="dig">208</span>).exists(<img src="1404567418743.png" />):
+            Region(<span class="dig">219</span>,<span class="dig">324</span>,<span class="dig">480</span>,<span class="dig">208</span>).hover(<img src="1404567418743.png" />)
+            <span class="skw">sleep</span>(<span class="dig">0.10</span>)
+            open_boi_load()
+        <span class="kw">else</span>:
+            Region(<span class="dig">173</span>,<span class="dig">253</span>,<span class="dig">774</span>,<span class="dig">554</span>).<span class="skw">click</span>(Pattern(<img src="HanacrnZE.png" />).targetOffset(-<span class="dig">17</span>,<span class="dig">3</span>))
+            <span class="skw">sleep</span>(<span class="dig">30</span>)
+            <span class="kw">if</span> Region(<span class="dig">240</span>,<span class="dig">250</span>,<span class="dig">652</span>,<span class="dig">320</span>).exists(<img src="QBuxcn.png" />):
+                <span class="skw">sleep</span>(<span class="dig">0</span>)
+                Region(<span class="dig">240</span>,<span class="dig">250</span>,<span class="dig">652</span>,<span class="dig">320</span>).<span class="skw">click</span>(<img src="QBuxcn.png" />)
+            <span class="kw">else</span>:
+                <span class="skw">click</span>(Location(<span class="dig">555</span>,<span class="dig">484</span>))
+                <span class="kw">if</span> Region(<span class="dig">237</span>,<span class="dig">253</span>,<span class="dig">652</span>,<span class="dig">311</span>).exists(<img src="1404559699899.png" />):
+                     Region(<span class="dig">237</span>,<span class="dig">253</span>,<span class="dig">652</span>,<span class="dig">311</span>).<span class="skw">click</span>(<img src="1404559699899.png" />)
+                     <span class="skw">sleep</span>(<span class="dig">0.10</span>)
+                     Region(<span class="dig">240</span>,<span class="dig">250</span>,<span class="dig">652</span>,<span class="dig">320</span>).<span class="skw">click</span>(<img src="QBuxcn.png" />)
+                     <span class="skw">sleep</span>(<span class="dig">10</span>)
+                     open_boi_load()
+                <span class="kw">else</span>:
+                    <span class="skw">sleep</span>(<span class="dig">30</span>)
+                    Region(<span class="dig">240</span>,<span class="dig">250</span>,<span class="dig">652</span>,<span class="dig">320</span>).<span class="skw">click</span>(<img src="QBuxcn.png" />)
+    <span class="kw">else</span>:
+        open_boi_load()
+
+<span class="kw">def</span> close_boi(): <span class="cmt">#закрываем окно после боя</span>
+    <span class="kw">if</span> Region(<span class="dig">240</span>,<span class="dig">250</span>,<span class="dig">652</span>,<span class="dig">320</span>).exists(<img src="QBuxcn.png" />):
+        Region(<span class="dig">240</span>,<span class="dig">250</span>,<span class="dig">652</span>,<span class="dig">320</span>).<span class="skw">click</span>(<img src="QBuxcn.png" />)
+        new_okno_boi()
+    <span class="kw">else</span>:
+        <span class="skw">click</span>(Location(<span class="dig">555</span>,<span class="dig">484</span>))
+        Region(<span class="dig">237</span>,<span class="dig">253</span>,<span class="dig">652</span>,<span class="dig">311</span>).<span class="skw">click</span>(<img src="1404559699899.png" />)
+        <span class="kw">if</span> Region(<span class="dig">183</span>,<span class="dig">266</span>,<span class="dig">767</span>,<span class="dig">547</span>).exists(<img src="Floanpanrmen.png" />):
+            Region(<span class="dig">183</span>,<span class="dig">266</span>,<span class="dig">767</span>,<span class="dig">547</span>).<span class="skw">click</span>(<img src="1404562484299.png" />)
+            Region(<span class="dig">240</span>,<span class="dig">250</span>,<span class="dig">652</span>,<span class="dig">320</span>).<span class="skw">click</span>(<img src="QBuxcn.png" />)
+            new_okno_boi()
+        <span class="kw">else</span>:
+            <span class="skw">sleep</span>(<span class="dig">0</span>)
+            Region(<span class="dig">183</span>,<span class="dig">266</span>,<span class="dig">767</span>,<span class="dig">547</span>).<span class="skw">click</span>(<img src="QBuxcn.png" />)
+            <span class="skw">sleep</span>(<span class="dig">10</span>)
+            new_okno_boi() <span class="cmt">#после закрытия подготовливаем к новым боям   </span>
+
+<span class="kw">def</span> new_okno_boi(): <span class="cmt">#всё что нужно для нового боя</span>
+     Region(<span class="dig">411</span>,<span class="dig">279</span>,<span class="dig">155</span>,<span class="dig">100</span>).<span class="skw">click</span>(<img src="1404557642674.png" />)
+     <span class="kw">if</span> Region(<span class="dig">177</span>,<span class="dig">306</span>,<span class="dig">378</span>,<span class="dig">486</span>).exists(<img src="BUKBAJI.png" />):
+          Region(<span class="dig">195</span>,<span class="dig">412</span>,<span class="dig">201</span>,<span class="dig">102</span>).<span class="skw">click</span>(<img src="BUKBAJI.png" />)
+          <span class="skw">sleep</span>(<span class="dig">0.10</span>)
+          Region(<span class="dig">736</span>,<span class="dig">627</span>,<span class="dig">220</span>,<span class="dig">179</span>).hover(<img src="1404582245445.png" />)
+          <span class="skw">sleep</span>(<span class="dig">2</span>)
+          Region(<span class="dig">192</span>,<span class="dig">316</span>,<span class="dig">740</span>,<span class="dig">474</span>).<span class="skw">click</span>(Pattern(<img src="1404559393979.png" />).targetOffset(-<span class="dig">55</span>,<span class="dig">20</span>))
+          <span class="kw">if</span> Region(<span class="dig">181</span>,<span class="dig">253</span>,<span class="dig">142</span>,<span class="dig">41</span>).exists(<img src="BVITBA.png" />):
+              left_open_doi()
+          <span class="kw">else</span>:
+              <span class="skw">sleep</span>(<span class="dig">0.10</span>)
+              Region(<span class="dig">192</span>,<span class="dig">316</span>,<span class="dig">740</span>,<span class="dig">474</span>).<span class="skw">click</span>(Pattern(<img src="1404559393979.png" />).targetOffset(-<span class="dig">55</span>,<span class="dig">20</span>))
+              Region(<span class="dig">175</span>,<span class="dig">306</span>,<span class="dig">770</span>,<span class="dig">489</span>).<span class="skw">click</span>(<img src="1404547957758.png" />)
+              left_open_doi()
+     <span class="kw">else</span>:
+         <span class="kw">if</span> Region(<span class="dig">216</span>,<span class="dig">326</span>,<span class="dig">149</span>,<span class="dig">128</span>).exists(<img src="DBOPbI.png" />):
+             Region(<span class="dig">188</span>,<span class="dig">310</span>,<span class="dig">190</span>,<span class="dig">151</span>).<span class="skw">click</span>(<img src="DBOPbI-1.png" />)
+             Region(<span class="dig">736</span>,<span class="dig">627</span>,<span class="dig">220</span>,<span class="dig">179</span>).hover(<img src="1404582245445.png" />)
+             <span class="skw">sleep</span>(<span class="dig">2</span>)
+             Region(<span class="dig">192</span>,<span class="dig">316</span>,<span class="dig">740</span>,<span class="dig">474</span>).<span class="skw">click</span>(Pattern(<img src="1404559393979.png" />).targetOffset(-<span class="dig">55</span>,<span class="dig">20</span>))
+             <span class="kw">if</span> Region(<span class="dig">181</span>,<span class="dig">253</span>,<span class="dig">142</span>,<span class="dig">41</span>).exists(<img src="BVITBA.png" />):
+                 left_open_doi()
+             <span class="kw">else</span>:
+                 <span class="skw">sleep</span>(<span class="dig">0.10</span>)
+                 Region(<span class="dig">192</span>,<span class="dig">316</span>,<span class="dig">740</span>,<span class="dig">474</span>).<span class="skw">click</span>(Pattern(<img src="1404559393979.png" />).targetOffset(-<span class="dig">55</span>,<span class="dig">20</span>))
+                 Region(<span class="dig">175</span>,<span class="dig">306</span>,<span class="dig">770</span>,<span class="dig">489</span>).<span class="skw">click</span>(<img src="1404547957758.png" />)
+                 left_open_doi()
+         <span class="kw">else</span>:
+             <span class="kw">if</span> Region(<span class="dig">376</span>,<span class="dig">313</span>,<span class="dig">125</span>,<span class="dig">121</span>).exists(<img src="KOCTEFI.png" />):
+                 Region(<span class="dig">373</span>,<span class="dig">313</span>,<span class="dig">127</span>,<span class="dig">108</span>).<span class="skw">click</span>(<img src="KOCTEFI-1.png" />)
+                 Region(<span class="dig">736</span>,<span class="dig">627</span>,<span class="dig">220</span>,<span class="dig">179</span>).hover(<img src="1404582245445.png" />)
+                 <span class="skw">sleep</span>(<span class="dig">2</span>)
+                 Region(<span class="dig">192</span>,<span class="dig">316</span>,<span class="dig">740</span>,<span class="dig">474</span>).<span class="skw">click</span>(Pattern(<img src="1404559393979.png" />).targetOffset(-<span class="dig">55</span>,<span class="dig">20</span>))
+                 <span class="kw">if</span> Region(<span class="dig">181</span>,<span class="dig">253</span>,<span class="dig">142</span>,<span class="dig">41</span>).exists(<img src="BVITBA.png" />):
+                     left_open_doi()
+                 <span class="kw">else</span>:
+                     <span class="skw">sleep</span>(<span class="dig">0.10</span>)
+                     Region(<span class="dig">192</span>,<span class="dig">316</span>,<span class="dig">740</span>,<span class="dig">474</span>).<span class="skw">click</span>(Pattern(<img src="1404559393979.png" />).targetOffset(-<span class="dig">55</span>,<span class="dig">20</span>))
+                     Region(<span class="dig">175</span>,<span class="dig">306</span>,<span class="dig">770</span>,<span class="dig">489</span>).<span class="skw">click</span>(<img src="1404547957758.png" />)
+                     left_open_doi()
+
+<span class="cmt">#Начинаем поиск противника
+</span>
+<span class="kw">def</span> left_open_doi(): <span class="cmt">#смотрим слева</span>
+    region_left = Region(<span class="dig">561</span>,<span class="dig">414</span>,<span class="dig">386</span>,<span class="dig">387</span>)
+    <span class="kw">if</span> region_left.exists(<img src="aIE.png" />): <span class="cmt">#если уровень меньше</span>
+        <span class="kw">if</span> region_left.exists(<img src="HAI1ACIh2g.png" />):
+            region_left.hover(<img src="Cmna.png" />)
+            <span class="kw">if</span> region_left.exists(<img src="1404561848539.png" />):
+                right_open_boi()
+            <span class="kw">else</span>:
+                region_left.<span class="skw">click</span>(<img src="HAI1ACIh2g.png" />)
+                <span class="kw">if</span> Region(<span class="dig">177</span>,<span class="dig">250</span>,<span class="dig">779</span>,<span class="dig">551</span>).exists(<img src="1404562400404.png" />):
+                    Region(<span class="dig">177</span>,<span class="dig">250</span>,<span class="dig">779</span>,<span class="dig">551</span>).<span class="skw">click</span>(<img src="1404562484299.png" />)
+                    <span class="skw">sleep</span>(<span class="dig">0.23</span>)
+                    new_okno_boi()
+                <span class="kw">else</span>:
+                    <span class="kw">if</span> Region(<span class="dig">161</span>,<span class="dig">175</span>,<span class="dig">795</span>,<span class="dig">633</span>).exists(<img src="Heqocrarouuo.png" />):
+                        Region(<span class="dig">161</span>,<span class="dig">175</span>,<span class="dig">795</span>,<span class="dig">633</span>).<span class="skw">click</span>(<img src="1404562484299.png" />)
+                        else_none_boi()
+                    <span class="kw">else</span>:
+                        <span class="kw">if</span> Region(<span class="dig">163</span>,<span class="dig">171</span>,<span class="dig">797</span>,<span class="dig">636</span>).exists(<img src="HEAOCTBTOHH0.png" />):
+                            <span class="skw">sleep</span>(<span class="dig">100</span>)
+                            new_okno_boi()
+                        <span class="kw">else</span>:
+                            <span class="skw">sleep</span>(<span class="dig">30</span>)
+                            close_boi()
+        <span class="kw">else</span>:
+           right_open_boi()
+    <span class="kw">else</span>:
+        right_open_boi()
+
+<span class="kw">def</span> right_open_boi():
+    region_right = Region(<span class="dig">175</span>,<span class="dig">418</span>,<span class="dig">388</span>,<span class="dig">381</span>)
+    <span class="kw">if</span> region_right.exists(<img src="aIE-1.png" />):
+        <span class="kw">if</span> region_right.exists(<img src="HAI1ACIh2g.png" />):
+            region_right.hover(<img src="Cmna.png" />)
+            <span class="kw">if</span> Region(<span class="dig">447</span>,<span class="dig">499</span>,<span class="dig">96</span>,<span class="dig">22</span>).exists(<img src="1404561848539.png" />):
+                new_okno_boi()
+            <span class="kw">else</span>:
+                region_right.<span class="skw">click</span>(<img src="HAI1ACIh2g.png" />)
+                <span class="kw">if</span> Region(<span class="dig">177</span>,<span class="dig">250</span>,<span class="dig">779</span>,<span class="dig">551</span>).exists(<img src="1404562400404.png" />):
+                    Region(<span class="dig">177</span>,<span class="dig">250</span>,<span class="dig">779</span>,<span class="dig">551</span>).<span class="skw">click</span>(<img src="1404562484299.png" />)
+                    <span class="skw">sleep</span>(<span class="dig">0.23</span>)
+                    new_okno_boi()
+                <span class="kw">else</span>:
+                    <span class="kw">if</span> Region(<span class="dig">161</span>,<span class="dig">175</span>,<span class="dig">795</span>,<span class="dig">633</span>).exists(<img src="Heqocrarouuo.png" />):
+                        Region(<span class="dig">161</span>,<span class="dig">175</span>,<span class="dig">795</span>,<span class="dig">633</span>).<span class="skw">click</span>(<img src="1404562484299.png" />)
+                        else_none_boi()
+                    <span class="kw">else</span>:
+                        <span class="kw">if</span> Region(<span class="dig">163</span>,<span class="dig">171</span>,<span class="dig">797</span>,<span class="dig">636</span>).exists(<img src="HEAOCTBTOHH0.png" />):
+                            <span class="skw">sleep</span>(<span class="dig">100</span>)
+                            new_okno_boi()
+                        <span class="kw">else</span>:
+                            <span class="skw">sleep</span>(<span class="dig">30</span>)
+                            close_boi()
+        <span class="kw">else</span>:
+            new_okno_boi()
+    <span class="kw">else</span>:
+        new_okno_boi()
+
+<span class="kw">def</span> open_boi_load():
+    <span class="kw">if</span> Region(<span class="dig">14</span>,<span class="dig">193</span>,<span class="dig">165</span>,<span class="dig">114</span>).exists(<img src="1404566085321.png" />):
+        Region(<span class="dig">14</span>,<span class="dig">193</span>,<span class="dig">165</span>,<span class="dig">114</span>).<span class="skw">click</span>(<img src="YZ.png" />)
+        <span class="skw">sleep</span>(<span class="dig">0.23</span>)
+        Region(<span class="dig">167</span>,<span class="dig">179</span>,<span class="dig">782</span>,<span class="dig">389</span>).<span class="skw">click</span>(<img src="1404566159549.png" />)
+        Region(<span class="dig">10</span>,<span class="dig">209</span>,<span class="dig">124</span>,<span class="dig">652</span>).<span class="skw">click</span>(<img src="IUHTlf.png" />)
+        Region(<span class="dig">736</span>,<span class="dig">627</span>,<span class="dig">220</span>,<span class="dig">179</span>).hover(<img src="1404582245445.png" />)
+        <span class="skw">sleep</span>(<span class="dig">1</span>)
+        Region(<span class="dig">192</span>,<span class="dig">316</span>,<span class="dig">740</span>,<span class="dig">474</span>).<span class="skw">click</span>(Pattern(<img src="1404559393979.png" />).targetOffset(-<span class="dig">55</span>,<span class="dig">20</span>))
+        <span class="kw">if</span> Region(<span class="dig">181</span>,<span class="dig">253</span>,<span class="dig">142</span>,<span class="dig">41</span>).exists(<img src="BVITBA.png" />):
+             left_open_doi()
+        <span class="kw">else</span>:
+            <span class="skw">sleep</span>(<span class="dig">0</span>)
+            Region(<span class="dig">175</span>,<span class="dig">306</span>,<span class="dig">770</span>,<span class="dig">489</span>).<span class="skw">click</span>(<img src="1404547957758.png" />)
+            <span class="skw">sleep</span>(<span class="dig">1</span>)
+            left_open_doi()
+    <span class="kw">else</span>:
+         Region(<span class="dig">22</span>,<span class="dig">221</span>,<span class="dig">100</span>,<span class="dig">248</span>).<span class="skw">click</span>(<img src="IUHTlf.png" />)
+         <span class="skw">sleep</span>(<span class="dig">1</span>)
+         Region(<span class="dig">736</span>,<span class="dig">627</span>,<span class="dig">220</span>,<span class="dig">179</span>).hover(<img src="1404582245445.png" />)
+         <span class="skw">sleep</span>(<span class="dig">1</span>)
+         Region(<span class="dig">192</span>,<span class="dig">316</span>,<span class="dig">740</span>,<span class="dig">474</span>).<span class="skw">click</span>(Pattern(<img src="1404559393979.png" />).targetOffset(-<span class="dig">55</span>,<span class="dig">20</span>))
+         <span class="kw">if</span> Region(<span class="dig">181</span>,<span class="dig">253</span>,<span class="dig">142</span>,<span class="dig">41</span>).exists(<img src="BVITBA.png" />):
+             left_open_doi()
+         <span class="kw">else</span>:
+             <span class="skw">sleep</span>(<span class="dig">0</span>)
+             Region(<span class="dig">175</span>,<span class="dig">306</span>,<span class="dig">770</span>,<span class="dig">489</span>).<span class="skw">click</span>(<img src="1404547957758.png" />)
+             <span class="skw">sleep</span>(<span class="dig">0.10</span>)
+             left_open_doi()
+
+<span class="kw">def</span> start():
+    <span class="kw">if</span> Region(<span class="dig">89</span>,<span class="dig">168</span>,<span class="dig">879</span>,<span class="dig">706</span>).exists(Pattern(<img src="1404545006957.png" />).similar(<span class="dig">0.90</span>),<span class="dig">10</span>):
+        Region(<span class="dig">89</span>,<span class="dig">168</span>,<span class="dig">879</span>,<span class="dig">706</span>).<span class="skw">click</span>(<img src="1404545006957.png" />)   <span class="cmt"># Закрыть окно</span>
+        <span class="kw">if</span>  Region(<span class="dig">89</span>,<span class="dig">168</span>,<span class="dig">879</span>,<span class="dig">706</span>).exists(Pattern(<img src="1404545006957.png" />).similar(<span class="dig">0.90</span>),<span class="dig">10</span>):
+            f1 = <span class="skw">find</span>(<img src="1404544876487.png" />)
+            <span class="skw">click</span>(Location(<span class="dig">882</span>,<span class="dig">301</span>)) <span class="cmt">#Закрыть окно</span>
+            <span class="kw">if</span> Region(<span class="dig">89</span>,<span class="dig">168</span>,<span class="dig">879</span>,<span class="dig">706</span>).exists(<img src="EMEAHEBHbleI.png" />):
+                <span class="skw">click</span>(Location(<span class="dig">561</span>,<span class="dig">631</span>))
+                open_boi_load()
+            <span class="kw">else</span>:
+                open_boi_load()
+        <span class="kw">else</span>:
+            <span class="kw">if</span>  Region(<span class="dig">89</span>,<span class="dig">168</span>,<span class="dig">879</span>,<span class="dig">706</span>).exists(<img src="EMEAHEBHbleI.png" />):
+                <span class="skw">click</span>(Location(<span class="dig">561</span>,<span class="dig">631</span>))
+                open_boi_load()
+            <span class="kw">else</span>:
+                open_boi_load()
+    <span class="kw">else</span>:
+        <span class="kw">if</span>  Region(<span class="dig">89</span>,<span class="dig">168</span>,<span class="dig">879</span>,<span class="dig">706</span>).exists(Pattern(<img src="1404545006957.png" />).similar(<span class="dig">0.90</span>),<span class="dig">10</span>):
+            f1 = <span class="skw">find</span>(<img src="1404544876487.png" />)
+            <span class="skw">click</span>(Location(<span class="dig">882</span>,<span class="dig">301</span>)) <span class="cmt">#Закрыть окно</span>
+            <span class="kw">if</span> Region(<span class="dig">89</span>,<span class="dig">168</span>,<span class="dig">879</span>,<span class="dig">706</span>).exists(<img src="EMEAHEBHbleI.png" />):
+                <span class="skw">click</span>(Location(<span class="dig">561</span>,<span class="dig">631</span>))
+                open_boi_load()
+            <span class="kw">else</span>:
+                open_boi_load()
+        <span class="kw">else</span>:
+            <span class="kw">if</span>  Region(<span class="dig">89</span>,<span class="dig">168</span>,<span class="dig">879</span>,<span class="dig">706</span>).exists(<img src="EMEAHEBHbleI.png" />):
+                <span class="skw">click</span>(Location(<span class="dig">561</span>,<span class="dig">631</span>))
+                open_boi_load()
+            <span class="kw">else</span>:
+                open_boi_load()
+
+start()
+</pre>
+</body>
+</html>
